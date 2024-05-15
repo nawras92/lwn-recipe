@@ -5,11 +5,22 @@
   "version": "0.1.0",
   "title": "Lwn Recipe Notes",
   "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "icon": "pressthis",
+  "description": "Add Note to Recipe Page",
+  "attributes": {
+    "noteText": {
+      "type": "string"
+    }
+  },
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "color": true,
+    "align": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
   },
   "textdomain": "lwn-recipe-notes",
   "editorScript": "file:./index.js",
