@@ -1,1 +1,0 @@
-console.log("Hello World! (from lwn-recipe-lwn-recipe-notes block)");
