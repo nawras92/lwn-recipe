@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lwn-recipe/lwn-recipe-meta",
+  "version": "0.1.0",
+  "title": "Lwn Recipe Meta",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Controls the recipe meta including the preparation time, cook time, overal time, and other",
+  "attributes": {
+    "preparation_time": {
+      "type": "number"
+    },
+    "cooking_time": {
+      "type": "number"
+    },
+    "overall_time": {
+      "type": "number"
+    },
+    "servings": {
+      "type": "number"
+    },
+    "isVegan": {
+      "type": "boolean",
+      "default": false
+    },
+    "meal": {
+      "enum": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "default": "breakfast"
+    },
+    "boxBackground": {
+      "type": "string",
+      "default": "#f4f4f4"
+    },
+    "boxTitleColor": {
+      "type": "string",
+      "default": "#2d2c39"
+    },
+    "boxValueColor": {
+      "type": "string",
+      "default": "#8fb257"
+    }
+  },
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  },
+  "textdomain": "lwn-recipe-meta",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
