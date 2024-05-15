@@ -21,7 +21,7 @@ function lwn_recipe_init()
       ),
     ],
     'public' => true,
-    'supports' => ['title', 'editor', 'thumbnail', 'comments'],
+    'supports' => ['title', 'editor', 'thumbnail', 'comments', 'excerpt'],
     'taxonomies' => ['lwn_recipe_type'],
     'has_archive' => true,
     'show_in_nav_menus' => true,

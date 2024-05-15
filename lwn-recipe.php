@@ -14,8 +14,10 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-// Define Plugin url
+// Define Plugin PATH
 define('LWN_RECIPE_PLUGIN_PATH', plugin_dir_path(__FILE__));
+// Define Plugin URL
+define('LWN_RECIPE_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 // Help Tabs Constants
 define(
@@ -46,3 +48,5 @@ require_once LWN_RECIPE_PLUGIN_PATH . 'admin/admin-ui.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-recipe-type.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-recipe-taxonomy.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/blocks.php';
+require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-styles.php';
+require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-patterns.php';
