@@ -14,6 +14,7 @@ function lwn_recipe_add_taxonomy()
     'show_tagcloud' => false,
     'hierarchical' => true,
     'show_in_nav_menus' => true,
+    'show_in_rest' => true,
     'rewrite' => ['slug' => 'recipe-type'],
   ]);
 }
