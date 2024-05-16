@@ -1,4 +1,4 @@
-# Copyright (C) 2023 Nawras Ali
+# Copyright (C) 2024 Nawras Ali
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
@@ -9,13 +9,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-02-20T17:10:47+03:00\n"
+"POT-Creation-Date: 2024-05-16T14:20:14+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: lwn-recipe\n"
 
 #. Plugin Name of the plugin
-#: includes/register-recipe-type.php:9
+#: includes/register-recipe-type.php:17
 msgid "LWN Recipe"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgid "LWN Recipe Plugin"
 msgstr ""
 
 #: admin/admin-ui.php:8
-#: includes/register-recipe-type.php:8
+#: includes/register-recipe-type.php:16
 msgid "LWN Recipes"
 msgstr ""
 
@@ -147,64 +147,86 @@ msgstr ""
 msgid "WordPress Development Learning Path"
 msgstr ""
 
-#: includes/register-recipe-metabox.php:10
+#: includes/register-lwn-patterns.php:5
+msgid "LWN Recipe Short Description"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:7
+msgid "Short description about the recipe"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:9
+msgid "Lentil soup is one of the most delicious types of soup, popular in the Arab world, often consumed in winter for its ability to increase warmth. Lentil soup is prepared in easy ways. If you are a fan of this soup, we offer you in today's dish the method and ingredients for preparing it with easy steps, and you will get delicious and healthy lentil soup."
+msgstr ""
+
+#: includes/register-lwn-patterns.php:17
+msgid "LWN Recipe Meta Section"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:26
+msgid "LWN Recipe Ingredients"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:28
+#: includes/register-lwn-patterns.php:30
 msgid "Recipe Ingredients"
 msgstr ""
 
-#: includes/register-recipe-metabox.php:18
+#: includes/register-lwn-patterns.php:35
+msgid "Sugar"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:35
+msgid "1 tablespoon"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:39
+msgid "Flour"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:39
+msgid "2 cups"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:43
+msgid "Hot water"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:43
+msgid "2 teaspoons"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:47
+msgid "Semolina"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:47
+msgid "3 cups"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:56
+msgid "LWN Recipe Steps"
+msgstr ""
+
+#: includes/register-lwn-patterns.php:58
+#: includes/register-lwn-patterns.php:60
 msgid "Recipe Steps"
 msgstr ""
 
-#: includes/register-recipe-metabox.php:26
-msgid "Recipe Info"
+#: includes/register-lwn-patterns.php:65
+msgid "Place water in the container."
 msgstr ""
 
-#: includes/register-recipe-metabox.php:61
-msgid "Breakfast"
+#: includes/register-lwn-patterns.php:69
+msgid "Add sugar and semolina."
 msgstr ""
 
-#: includes/register-recipe-metabox.php:62
-msgid "Lunch"
+#: includes/register-lwn-patterns.php:73
+msgid "Add flour."
 msgstr ""
 
-#: includes/register-recipe-metabox.php:63
-msgid "Dinner"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:70
-msgid "Short Description"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:82
-msgid "Prep Time (in Minutes)"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:94
-msgid "Cook Time (in Minutes)"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:106
-msgid "Total Time (in Minutes)"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:118
-#: templates/single-lwn_recipe.php:38
-msgid "Servings"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:130
-#: templates/single-lwn_recipe.php:108
-msgid "Vegan?"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:142
-#: templates/single-lwn_recipe.php:95
-msgid "Meal"
-msgstr ""
-
-#: includes/register-recipe-metabox.php:161
-#: templates/single-lwn_recipe.php:163
-msgid "Notes"
+#: includes/register-lwn-patterns.php:77
+msgid "Mix the ingredients together."
 msgstr ""
 
 #: includes/register-recipe-taxonomy.php:9
@@ -219,117 +241,191 @@ msgstr ""
 msgid "New Recipe Type Name"
 msgstr ""
 
-#: includes/register-recipe-type.php:10
+#: includes/register-recipe-type.php:18
 msgid "Add New"
 msgstr ""
 
-#: includes/register-recipe-type.php:11
+#: includes/register-recipe-type.php:19
 msgid "Add New Recipe"
 msgstr ""
 
-#: includes/register-recipe-type.php:12
+#: includes/register-recipe-type.php:20
 msgid "Edit"
 msgstr ""
 
-#: includes/register-recipe-type.php:13
+#: includes/register-recipe-type.php:21
 msgid "Edit LWN Recipe"
 msgstr ""
 
-#: includes/register-recipe-type.php:14
+#: includes/register-recipe-type.php:22
 msgid "View"
 msgstr ""
 
-#: includes/register-recipe-type.php:15
+#: includes/register-recipe-type.php:23
 msgid "View LWN Recipe"
 msgstr ""
 
-#: includes/register-recipe-type.php:16
+#: includes/register-recipe-type.php:24
 msgid "Search LWN Recipes"
 msgstr ""
 
-#: includes/register-recipe-type.php:17
+#: includes/register-recipe-type.php:25
 msgid "No LWN Recipes Found"
 msgstr ""
 
-#: includes/register-recipe-type.php:18
+#: includes/register-recipe-type.php:26
 msgid "No LWN Recipes Found in Trash"
 msgstr ""
 
-#: includes/register-sidebar.php:8
-msgid "LWN Recipe Sidebar"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:29
+msgid "Recipe Settings"
 msgstr ""
 
-#: includes/register-widgets.php:17
-msgid "Lists Lwn Recipe Types"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:31
+msgid "Recipe Time"
 msgstr ""
 
-#: includes/register-widgets.php:27
-#: includes/register-widgets.php:62
-msgid "Recipe Types"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:35
+msgid "Preparation Time (Minutes)"
 msgstr ""
 
-#: includes/register-widgets.php:72
-#: includes/register-widgets.php:182
-msgid "Widget Title"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:42
+msgid "Cooking Time (Minutes)"
 msgstr ""
 
-#: includes/register-widgets.php:84
-msgid "Hide Empty Types"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:50
+msgid "Other Recipe Meta"
 msgstr ""
 
-#: includes/register-widgets.php:116
-msgid "Display Latest LWN Recipes"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:54
+msgid "Servings (per person)"
 msgstr ""
 
-#: includes/register-widgets.php:126
-#: includes/register-widgets.php:170
-msgid "Recipes"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:61
+msgid "Is Vegan?"
 msgstr ""
 
-#: includes/register-widgets.php:194
-msgid "Number of recipes"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:66
+#: includes/blocks/lwn-recipe-meta/src/edit.js:162
+#: includes/blocks/lwn-recipe-meta/src/save.js:59
+msgid "Meal"
 msgstr ""
 
-#: templates/archive-lwn_recipe.php:49
-#: templates/taxonomy-lwn_recipe_type.php:56
-msgid "Older Recipes"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:71
+msgid "Breakfast"
 msgstr ""
 
-#: templates/archive-lwn_recipe.php:52
-#: templates/taxonomy-lwn_recipe_type.php:59
-msgid "Newer Recipes"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:73
+msgid "Lunch"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:51
-msgid "Prep Time"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:74
+msgid "Dinner"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:58
-#: templates/single-lwn_recipe.php:72
-#: templates/single-lwn_recipe.php:87
-msgid "Minutes"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:80
+msgid "Color Settings"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:65
-msgid "Cook Time"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:84
+msgid "Recipe Meta Box Color"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:80
-msgid "Total Time"
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:88
+msgid "Box Background"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:115
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:94
+msgid "Box Title Color"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:100
+msgid "Box Value Color"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:117
+#: includes/blocks/lwn-recipe-meta/src/save.js:14
+msgid "Preparation Time"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:128
+#: includes/blocks/lwn-recipe-meta/src/save.js:25
+msgid "Cooking Time"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:140
+#: includes/blocks/lwn-recipe-meta/src/save.js:37
+msgid "Overall Time"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:151
+#: includes/blocks/lwn-recipe-meta/src/save.js:48
+msgid "Servings"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:172
+#: includes/blocks/lwn-recipe-meta/src/save.js:69
+msgid "Vegan?"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:176
+#: includes/blocks/lwn-recipe-meta/src/save.js:73
 msgid "Yes"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:116
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:177
+#: includes/blocks/lwn-recipe-meta/src/save.js:74
 msgid "No"
 msgstr ""
 
-#: templates/single-lwn_recipe.php:131
-msgid "Ingredients"
+#: includes/blocks/lwn-recipe-notes/build/index.js:1
+#: includes/blocks/lwn-recipe-notes/src/edit.js:15
+msgid "Recipe Note Text..."
 msgstr ""
 
-#: templates/single-lwn_recipe.php:147
-msgid "Steps"
+#: includes/blocks/lwn-recipe-meta/build/block.json
+#: includes/blocks/lwn-recipe-meta/src/block.json
+msgctxt "block title"
+msgid "Lwn Recipe Meta"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-meta/build/block.json
+#: includes/blocks/lwn-recipe-meta/src/block.json
+msgctxt "block description"
+msgid "Controls the recipe meta including the preparation time, cook time, overal time, and other"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-notes/build/block.json
+#: includes/blocks/lwn-recipe-notes/src/block.json
+msgctxt "block title"
+msgid "Lwn Recipe Notes"
+msgstr ""
+
+#: includes/blocks/lwn-recipe-notes/build/block.json
+#: includes/blocks/lwn-recipe-notes/src/block.json
+msgctxt "block description"
+msgid "Add Note to Recipe Page"
 msgstr ""

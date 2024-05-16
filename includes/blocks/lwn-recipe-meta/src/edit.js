@@ -26,20 +26,20 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<>
 			<InspectorControls>
-				<Panel header={__('Recipe Settings', 'lwn-recipe-meta')}>
+				<Panel header={__('Recipe Settings', 'lwn-recipe')}>
 					<PanelBody
-						title={__('Recipe Time', 'lwn-recipe-meta')}
+						title={__('Recipe Time', 'lwn-recipe')}
 						initialOpen={false}
 					>
 						<RangeControl
-							label={__('Preparation Time (Minutes)', 'lwn-recipe-time')}
+							label={__('Preparation Time (Minutes)', 'lwn-recipe')}
 							value={attributes.preparation_time}
 							onChange={(value) => setAttributes({ preparation_time: value })}
 							min={1}
 							max={60 * 24}
 						/>
 						<RangeControl
-							label={__('Cooking Time (Minutes)', 'lwn-recipe-time')}
+							label={__('Cooking Time (Minutes)', 'lwn-recipe')}
 							value={attributes.cooking_time}
 							onChange={(value) => setAttributes({ cooking_time: value })}
 							min={1}
@@ -47,57 +47,57 @@ export default function Edit({ attributes, setAttributes }) {
 						/>
 					</PanelBody>
 					<PanelBody
-						title={__('Other Recipe Meta', 'lwn-recipe-meta')}
+						title={__('Other Recipe Meta', 'lwn-recipe')}
 						initialOpen={false}
 					>
 						<RangeControl
-							label={__('Servings (per person)', 'lwn-recipe-time')}
+							label={__('Servings (per person)', 'lwn-recipe')}
 							value={attributes.servings}
 							onChange={(value) => setAttributes({ servings: value })}
 							min={1}
 							max={100}
 						/>
 						<ToggleControl
-							label={__('Is Vegan?', 'lwn-recipe-time')}
+							label={__('Is Vegan?', 'lwn-recipe')}
 							checked={attributes.isVegan}
 							onChange={(value) => setAttributes({ isVegan: value })}
 						/>
 						<SelectControl
-							label={__('Meal', 'lwn-recipe-time')}
+							label={__('Meal', 'lwn-recipe')}
 							value={attributes.meal}
 							options={[
 								{
 									value: 'breakfast',
-									label: __('Breakfast', 'lwn-recipe-meta'),
+									label: __('Breakfast', 'lwn-recipe'),
 								},
-								{ value: 'lunch', label: __('Lunch', 'lwn-recipe-meta') },
-								{ value: 'dinner', label: __('Dinner', 'lwn-recipe-meta') },
+								{ value: 'lunch', label: __('Lunch', 'lwn-recipe') },
+								{ value: 'dinner', label: __('Dinner', 'lwn-recipe') },
 							]}
 							onChange={(value) => setAttributes({ meal: value })}
 						/>
 					</PanelBody>
 					<PanelBody
-						title={__('Color Settings', 'lwn-recipe-meta')}
+						title={__('Color Settings', 'lwn-recipe')}
 						initialOpen={false}
 					>
 						<PanelColorSettings
-							title={__('Recipe Meta Box Color', 'lwn-recipe-meta')}
+							title={__('Recipe Meta Box Color', 'lwn-recipe')}
 							initialOpen={true}
 							colorSettings={[
 								{
-									label: __('Box Background', 'lwn-recipe-meta'),
+									label: __('Box Background', 'lwn-recipe'),
 									value: attributes.boxBackground,
 									onChange: (newValue) =>
 										setAttributes({ boxBackground: newValue }),
 								},
 								{
-									label: __('Box Title Color', 'lwn-recipe-meta'),
+									label: __('Box Title Color', 'lwn-recipe'),
 									value: attributes.boxTitleColor,
 									onChange: (newValue) =>
 										setAttributes({ boxTitleColor: newValue }),
 								},
 								{
-									label: __('Box Value Color', 'lwn-recipe-meta'),
+									label: __('Box Value Color', 'lwn-recipe'),
 									value: attributes.boxValueColor,
 									onChange: (newValue) =>
 										setAttributes({ boxValueColor: newValue }),
@@ -114,7 +114,7 @@ export default function Edit({ attributes, setAttributes }) {
 						style={{ background: attributes.boxBackground }}
 					>
 						<p style={{ color: attributes.boxTitleColor }}>
-							{__('Preparation Time', 'lwn-recipe-meta')}
+							{__('Preparation Time', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
 							{attributes.preparation_time}
@@ -125,7 +125,7 @@ export default function Edit({ attributes, setAttributes }) {
 						style={{ background: attributes.boxBackground }}
 					>
 						<p style={{ color: attributes.boxTitleColor }}>
-							{__('Cooking Time', 'lwn-recipe-meta')}
+							{__('Cooking Time', 'lwn-recipe')}
 						</p>
 
 						<p style={{ color: attributes.boxValueColor }}>
@@ -137,7 +137,7 @@ export default function Edit({ attributes, setAttributes }) {
 						style={{ background: attributes.boxBackground }}
 					>
 						<p style={{ color: attributes.boxTitleColor }}>
-							{__('Overall Time', 'lwn-recipe-meta')}
+							{__('Overall Time', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
 							{attributes.overall_time}
@@ -148,7 +148,7 @@ export default function Edit({ attributes, setAttributes }) {
 						style={{ background: attributes.boxBackground }}
 					>
 						<p style={{ color: attributes.boxTitleColor }}>
-							{__('Servings', 'lwn-recipe-meta')}
+							{__('Servings', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
 							{attributes.servings}
@@ -159,7 +159,7 @@ export default function Edit({ attributes, setAttributes }) {
 						style={{ background: attributes.boxBackground }}
 					>
 						<p style={{ color: attributes.boxTitleColor }}>
-							{__('Meal', 'lwn-recipe-meta')}
+							{__('Meal', 'lwn-recipe')}
 						</p>
 
 						<p style={{ color: attributes.boxValueColor }}>{attributes.meal}</p>
@@ -169,12 +169,12 @@ export default function Edit({ attributes, setAttributes }) {
 						style={{ background: attributes.boxBackground }}
 					>
 						<p style={{ color: attributes.boxTitleColor }}>
-							{__('Vegan?', 'lwn-recipe-meta')}
+							{__('Vegan?', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
 							{attributes.isVegan
-								? __('Yes', 'lwn-recipe-meta')
-								: __('No', 'lwn-recipe-meta')}
+								? __('Yes', 'lwn-recipe')
+								: __('No', 'lwn-recipe')}
 						</p>
 					</div>
 				</div>

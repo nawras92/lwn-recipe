@@ -50,3 +50,27 @@ require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-recipe-taxonomy.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/blocks.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-styles.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-patterns.php';
+
+// Load Translation of blocks after registering the blocks
+add_action('init', 'lwn_recipe_load_block_translations');
+function lwn_recipe_load_block_translations()
+{
+  $meta_script_handle = generate_block_asset_handle(
+    'lwn-recipe/lwn-recipe-meta',
+    'editorScript'
+  );
+  wp_set_script_translations(
+    $meta_script_handle,
+    'lwn-recipe',
+    plugin_dir_path(__FILE__) . 'languages'
+  );
+  $notes_script_handle = generate_block_asset_handle(
+    'lwn-recipe/lwn-recipe-notes',
+    'editorScript'
+  );
+  wp_set_script_translations(
+    $notes_script_handle,
+    'lwn-recipe',
+    plugin_dir_path(__FILE__) . 'languages'
+  );
+}

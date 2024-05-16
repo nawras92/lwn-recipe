@@ -1,8 +1,10 @@
 <?php
 
 /* Includes Blocks */
-require_once LWN_RECIPE_PLUGIN_PATH .
-  'includes/blocks/lwn-recipe-meta/lwn-recipe-meta.php';
 
-require_once LWN_RECIPE_PLUGIN_PATH .
-  'includes/blocks/lwn-recipe-notes/lwn-recipe-notes.php';
+function lwn_recipe_lwn_recipe_meta_block_init()
+{
+  register_block_type(__DIR__ . '/blocks/lwn-recipe-meta/build');
+  register_block_type(__DIR__ . '/blocks/lwn-recipe-notes/build');
+}
+add_action('init', 'lwn_recipe_lwn_recipe_meta_block_init');

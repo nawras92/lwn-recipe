@@ -11,7 +11,7 @@ export default function save({ attributes }) {
 					style={{ background: attributes.boxBackground }}
 				>
 					<p style={{ color: attributes.boxTitleColor }}>
-						{__('Preparation Time', 'lwn-recipe-meta')}
+						{__('Preparation Time', 'lwn-recipe')}
 					</p>
 					<p style={{ color: attributes.boxValueColor }}>
 						{attributes.preparation_time}
@@ -22,7 +22,7 @@ export default function save({ attributes }) {
 					style={{ background: attributes.boxBackground }}
 				>
 					<p style={{ color: attributes.boxTitleColor }}>
-						{__('Cooking Time', 'lwn-recipe-meta')}
+						{__('Cooking Time', 'lwn-recipe')}
 					</p>
 
 					<p style={{ color: attributes.boxValueColor }}>
@@ -34,7 +34,7 @@ export default function save({ attributes }) {
 					style={{ background: attributes.boxBackground }}
 				>
 					<p style={{ color: attributes.boxTitleColor }}>
-						{__('Overall Time', 'lwn-recipe-meta')}
+						{__('Overall Time', 'lwn-recipe')}
 					</p>
 					<p style={{ color: attributes.boxValueColor }}>
 						{attributes.overall_time}
@@ -45,7 +45,7 @@ export default function save({ attributes }) {
 					style={{ background: attributes.boxBackground }}
 				>
 					<p style={{ color: attributes.boxTitleColor }}>
-						{__('Servings', 'lwn-recipe-meta')}
+						{__('Servings', 'lwn-recipe')}
 					</p>
 					<p style={{ color: attributes.boxValueColor }}>
 						{attributes.servings}
@@ -56,7 +56,7 @@ export default function save({ attributes }) {
 					style={{ background: attributes.boxBackground }}
 				>
 					<p style={{ color: attributes.boxTitleColor }}>
-						{__('Meal', 'lwn-recipe-meta')}
+						{__('Meal', 'lwn-recipe')}
 					</p>
 
 					<p style={{ color: attributes.boxValueColor }}>{attributes.meal}</p>
@@ -66,12 +66,12 @@ export default function save({ attributes }) {
 					style={{ background: attributes.boxBackground }}
 				>
 					<p style={{ color: attributes.boxTitleColor }}>
-						{__('Vegan?', 'lwn-recipe-meta')}
+						{__('Vegan?', 'lwn-recipe')}
 					</p>
 					<p style={{ color: attributes.boxValueColor }}>
 						{attributes.isVegan
-							? __('Yes', 'lwn-recipe-meta')
-							: __('No', 'lwn-recipe-meta')}
+							? __('Yes', 'lwn-recipe')
+							: __('No', 'lwn-recipe')}
 					</p>
 				</div>
 			</div>

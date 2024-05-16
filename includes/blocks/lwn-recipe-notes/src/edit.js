@@ -12,7 +12,7 @@ export default function Edit({ attributes, setAttributes }) {
 				tagName="p"
 				value={attributes.noteText}
 				onChange={(content) => setAttributes({ noteText: content })}
-				placeholder={__('Recipe Note Text...', 'lwn-recipe-notes')}
+				placeholder={__('Recipe Note Text...', 'lwn-recipe')}
 			/>
 		</div>
 	);

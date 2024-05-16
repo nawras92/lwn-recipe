@@ -13,8 +13,8 @@
  * @package LwnRecipe
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+if (!defined('ABSPATH')) {
+	exit(); // Exit if accessed directly.
 }
 
 /**
@@ -24,7 +24,34 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function lwn_recipe_lwn_recipe_meta_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function lwn_recipe_lwn_recipe_meta_block_init()
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'lwn_recipe_lwn_recipe_meta_block_init' );
+add_action('init', 'lwn_recipe_lwn_recipe_meta_block_init');
+
+// Load Text Domain
+add_action('init', 'lwn_recipe_lwn_recipe_meta_load_text_domain');
+function lwn_recipe_lwn_recipe_meta_load_text_domain()
+{
+	load_plugin_textdomain(
+		'lwn-recipe-meta',
+		false,
+		plugin_dir_path(__FILE__) . 'languages'
+	);
+}
+
+// Load Translation of blocks after registering the blocks
+add_action('init', 'lwn_recipe_lwn_recipe_meta_load_block_translations');
+function lwn_recipe_lwn_recipe_meta_load_block_translations()
+{
+	$script_handle = generate_block_asset_handle(
+		'lwn-recipe/lwn-recipe-meta',
+		'editorScript'
+	);
+	wp_set_script_translations(
+		$script_handle,
+		'lwn-recipe-meta',
+		plugin_dir_path(__FILE__) . 'languages'
+	);
+}
