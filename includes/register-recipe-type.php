@@ -3,6 +3,14 @@
 add_action('init', 'lwn_recipe_init');
 function lwn_recipe_init()
 {
+  /* Recipe Default Template */
+  $template_blocks = [
+    ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-short-description']],
+    ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-meta-section']],
+    ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-ingredients-section']],
+    ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-steps-section']],
+  ];
+
   $args = [
     'labels' => [
       'name' => esc_html__('LWN Recipes', 'lwn-recipe'),
@@ -29,6 +37,7 @@ function lwn_recipe_init()
     'menu_icon' => 'dashicons-food',
     'menu_position' => 100,
     'show_in_rest' => true,
+    'template' => $template_blocks,
     'rewrite' => ['slug' => 'recipe'],
   ];
   register_post_type('lwn_recipe', $args);
