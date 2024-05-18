@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LWN Recipe 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lwn-recipe\n"
-"POT-Creation-Date: 2024-05-16T14:20:14+03:00\n"
-"PO-Revision-Date: 2024-05-16 14:21+0300\n"
+"POT-Creation-Date: 2024-05-18T15:51:44+03:00\n"
+"PO-Revision-Date: 2024-05-18 15:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar_JO\n"
@@ -46,19 +46,19 @@ msgstr "إضافة وصفات LWN"
 msgid "LWN Recipes"
 msgstr "وصفات LWN"
 
-#: admin/admin-ui.php:24
+#: admin/admin-ui.php:21
 msgid "Lwn Recipe Plugin"
 msgstr "إضافة وصفات LWN"
 
-#: admin/admin-ui.php:27
+#: admin/admin-ui.php:24
 msgid "Manage your recipes smoothly!"
 msgstr "إدارة وصفاتك بسهولة"
 
-#: admin/admin-ui.php:35
+#: admin/admin-ui.php:32
 msgid "How to use?"
 msgstr "كيفية الاستخدام"
 
-#: admin/admin-ui.php:38
+#: admin/admin-ui.php:35
 msgid ""
 "Go to the bottom of admin sidebar, choose \"Lwn Recipe\", and enjoy adding "
 "your recipes!"
@@ -66,7 +66,7 @@ msgstr ""
 "اذهب إلى نهاية الشريط الجانبي للادمن. اختر \"وصفات LWN\" وثم استمتع بإضافة "
 "وصفاتك!"
 
-#: admin/admin-ui.php:48
+#: admin/admin-ui.php:45
 msgid "How to check all recipes in the frontend?"
 msgstr "كيفية عرض كل الوصفات على الواجهة الأمامية؟"
 
@@ -79,34 +79,36 @@ msgid "All Recipes URL"
 msgstr "رابط كل الوصفات"
 
 #: admin/admin-ui.php:68
-msgid "Customized Sidebar"
-msgstr "الشريط الجانبي المخصص"
+msgid "Recipe Blocks"
+msgstr "مكونات الوصفة"
 
 #: admin/admin-ui.php:71
 msgid ""
-"You can add your customized Sidebar to Recipe pages. Check it in the widgets "
-"section!"
-msgstr ""
-"يمكنك إضافة الشريط الجانبي المخصص لصفحات الوصفات. ارجع لقسم ودجات الموقع!"
+"You can add customized Gutenberg Recipe Meta Block to the Recipe Post Page!"
+msgstr "يمكنك اضافة مكون معلومات الوصفة لصفحة الوصفة."
 
-#: admin/admin-ui.php:81
-msgid "Customized Widgets"
-msgstr "الودجات المخصصة"
-
-#: admin/admin-ui.php:84
+#: admin/admin-ui.php:77
 msgid ""
-"There are two recipe widgets; the first is \"Lwn Latest Recipes\", and the "
-"second one is \"LWN Recipe Types\". You can check them in the widgets "
-"section."
-msgstr ""
-"نقدم لك نوعين من الودجات. الأول: أحدث الودجات، والثاني: أنواع الودجات. يمكنك "
-"التحقق منه في قسم الودجات."
+"You can add customized Gutenberg Recipe Note Block to the Recipe Post Page!"
+msgstr "يمكنك اضافة مكون ملاحظات الوصفة لصفحة الوصفة."
 
-#: admin/admin-ui.php:94
+#: admin/admin-ui.php:87
+msgid "Recipe Patterns"
+msgstr "أنماط الوصفة"
+
+#: admin/admin-ui.php:90
+msgid ""
+"You can customized Recipe Patterns; The Recipe steps, The Recipe Ingredients, "
+"and The Recipe Short Description "
+msgstr ""
+"يمكنك تخصيص أنماط الوصفة من نمط خطوات الوصفة، نمط مقادير الوصفة، ونمط الوصف "
+"القصير للوصفة."
+
+#: admin/admin-ui.php:100
 msgid "Useful Links"
 msgstr "روابط مفيدة"
 
-#: admin/admin-ui.php:97 admin/admin-ui.php:207
+#: admin/admin-ui.php:103
 msgid ""
 "If interested, you can learn more about plugin development, and how to make "
 "similar plugins here."
@@ -114,145 +116,136 @@ msgstr ""
 "إذا كنت مهتماً، يمكنك تعلم المزيد حول تطوير إضافات ووردبريس، وكيفية إنشاء "
 "إضافات مماثلة هنا."
 
-#: admin/admin-ui.php:106
-msgid "Wordpress Development Learning Path"
-msgstr "مسار تطوير تطوير إضافات ووردبريس"
-
-#: admin/admin-ui.php:115 admin/admin-ui.php:216
+#: admin/admin-ui.php:114
 msgid "Check Youtube Videos"
 msgstr "شاهد فيديوهات من اليوتيوب"
 
-#: admin/admin-ui.php:124 admin/admin-ui.php:219
+#: admin/admin-ui.php:125
 msgid "Code Repo."
 msgstr "مستودع الكود"
 
-#: admin/admin-ui.php:139
-msgid "What is this plugin?"
-msgstr "ما هذه الإضافة؟"
+#: includes/blocks.php:72 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:175
+#: includes/blocks/lwn-recipe-meta/src/save.js:23
+msgid "Preparation Time"
+msgstr "مدة التحضير"
 
-#: admin/admin-ui.php:144
-msgid "What is the purpose?"
-msgstr "ما الهدف من الإضافة؟"
+#: includes/blocks.php:85 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:186
+#: includes/blocks/lwn-recipe-meta/src/save.js:34
+msgid "Cooking Time"
+msgstr "مدة الطهي"
 
-#: admin/admin-ui.php:149
-msgid "Documentation"
-msgstr "التوثيق"
+#: includes/blocks.php:99 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:198
+#: includes/blocks/lwn-recipe-meta/src/save.js:46
+msgid "Overall Time"
+msgstr "المدة الكلية"
 
-#: admin/admin-ui.php:156
-msgid "Ask for help at: help@LearnWithNaw.net"
-msgstr "اطلب المساعدة عبر: help@LearnWithNaw.net"
+#: includes/blocks.php:112 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:209
+#: includes/blocks/lwn-recipe-meta/src/save.js:57
+msgid "Servings"
+msgstr "عدد الأشخاص"
 
-#: admin/admin-ui.php:166
-msgid ""
-"LWN Recipes helps users to manage their recipes, and display them in custom "
-"templates."
-msgstr ""
-"تساعد إضافة وصفات LWN المستخدمين على إدارة وصفاتهم وعرضها في قوالب مخصصة."
+#: includes/blocks.php:125 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:129
+#: includes/blocks/lwn-recipe-meta/src/edit.js:220
+#: includes/blocks/lwn-recipe-meta/src/save.js:68
+msgid "Meal"
+msgstr "الوجبة"
 
-#: admin/admin-ui.php:172
-msgid ""
-"LWN Recipes also allows users to add custom recipes widgets and sidebar to "
-"their website."
-msgstr "تتيح إضافة وصفات LWN عرض ودجات وشريط جانبي مخصص للوصفات."
+#: includes/blocks.php:138 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:236
+#: includes/blocks/lwn-recipe-meta/src/save.js:78
+msgid "Vegan?"
+msgstr "نباتية؟"
 
-#: admin/admin-ui.php:190
-msgid ""
-"LWN Recipes was created with the intention of teaching developers how to "
-"make a professional, yet simple WordPress plugin."
-msgstr ""
-"تم إنشاء إضافة وصفات LWN بنية مساعدة المطورين على بناء إضافة احترافية وبسيطة."
+#: includes/blocks.php:142 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:240
+#: includes/blocks/lwn-recipe-meta/src/save.js:82
+msgid "Yes"
+msgstr "نعم"
 
-#: admin/admin-ui.php:213
-msgid "WordPress Development Learning Path"
-msgstr "مسار تطوير تطوير إضافات ووردبريس"
+#: includes/blocks.php:143 includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:241
+#: includes/blocks/lwn-recipe-meta/src/save.js:83
+msgid "No"
+msgstr "لا"
 
 #: includes/register-lwn-patterns.php:5
 msgid "LWN Recipe Short Description"
 msgstr "وصف الوصفة القصير"
 
-#: includes/register-lwn-patterns.php:7
+#: includes/register-lwn-patterns.php:9
 msgid "Short description about the recipe"
 msgstr "وصف قصير عن الوصفة"
 
-#: includes/register-lwn-patterns.php:9
-msgid ""
-"Lentil soup is one of the most delicious types of soup, popular in the Arab "
-"world, often consumed in winter for its ability to increase warmth. Lentil "
-"soup is prepared in easy ways. If you are a fan of this soup, we offer you "
-"in today's dish the method and ingredients for preparing it with easy steps, "
-"and you will get delicious and healthy lentil soup."
-msgstr ""
-"شوربة العدس، هي واحدة من ألذ أنواع الشوربة، تحظى بشهرة كبيرة في الوطن "
-"العربي، يُكثر تناولها في فصل الشتاء؛ لقدرتها على زيادة الشعور بالدفء.تُحضّر "
-"شوربة العدس بطرق سهلة، إذا كنتِ من محبي هذه الشوربة نقدّم لك في طبق اليوم "
-"طريقة ومقادير تحضيرها بمكوّنات سهلة خطوة بخطوة وستحصلين على شوربة عدس لذيذة "
-"وصحيّة."
+#: includes/register-lwn-patterns.php:13
+msgid "Short Recipe Description...."
+msgstr "وصف الوصفة القصير"
 
-#: includes/register-lwn-patterns.php:17
-msgid "LWN Recipe Meta Section"
-msgstr "قسم معلومات الوصفة"
-
-#: includes/register-lwn-patterns.php:26
+#: includes/register-lwn-patterns.php:21
 msgid "LWN Recipe Ingredients"
 msgstr "مقادير الوصفة"
 
-#: includes/register-lwn-patterns.php:28 includes/register-lwn-patterns.php:30
+#: includes/register-lwn-patterns.php:25 includes/register-lwn-patterns.php:29
 msgid "Recipe Ingredients"
 msgstr "مقادير الوصفة"
 
-#: includes/register-lwn-patterns.php:35
+#: includes/register-lwn-patterns.php:36
 msgid "Sugar"
 msgstr "سكر"
 
-#: includes/register-lwn-patterns.php:35
+#: includes/register-lwn-patterns.php:38
 msgid "1 tablespoon"
 msgstr "1 معلقة كبيرة"
 
-#: includes/register-lwn-patterns.php:39
+#: includes/register-lwn-patterns.php:44
 msgid "Flour"
 msgstr "دقيق"
 
-#: includes/register-lwn-patterns.php:39
+#: includes/register-lwn-patterns.php:46
 msgid "2 cups"
 msgstr "2 كأس"
 
-#: includes/register-lwn-patterns.php:43
+#: includes/register-lwn-patterns.php:52
 msgid "Hot water"
 msgstr "ماء ساخن"
 
-#: includes/register-lwn-patterns.php:43
+#: includes/register-lwn-patterns.php:54
 msgid "2 teaspoons"
 msgstr "2 معلقة صغيرة"
 
-#: includes/register-lwn-patterns.php:47
+#: includes/register-lwn-patterns.php:60
 msgid "Semolina"
 msgstr "سميد"
 
-#: includes/register-lwn-patterns.php:47
+#: includes/register-lwn-patterns.php:62
 msgid "3 cups"
 msgstr "3 كأس"
 
-#: includes/register-lwn-patterns.php:56
+#: includes/register-lwn-patterns.php:71
 msgid "LWN Recipe Steps"
 msgstr "خطوات الوصفة"
 
-#: includes/register-lwn-patterns.php:58 includes/register-lwn-patterns.php:60
+#: includes/register-lwn-patterns.php:75 includes/register-lwn-patterns.php:79
 msgid "Recipe Steps"
 msgstr "خطوات الوصفة"
 
-#: includes/register-lwn-patterns.php:65
+#: includes/register-lwn-patterns.php:86
 msgid "Place water in the container."
 msgstr "ضع الماء في الوعاء"
 
-#: includes/register-lwn-patterns.php:69
+#: includes/register-lwn-patterns.php:92
 msgid "Add sugar and semolina."
 msgstr "اضف السكر مع السميد"
 
-#: includes/register-lwn-patterns.php:73
+#: includes/register-lwn-patterns.php:98
 msgid "Add flour."
 msgstr "اضف الدقيق."
 
-#: includes/register-lwn-patterns.php:77
+#: includes/register-lwn-patterns.php:104
 msgid "Mix the ingredients together."
 msgstr "اخلط المكونات معاً"
 
@@ -305,128 +298,85 @@ msgid "No LWN Recipes Found in Trash"
 msgstr "لم يتم إيجاد وصفات LWN في سلة المهملات"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:29
-msgid "Recipe Settings"
-msgstr "إعدادات الوصفة"
+#: includes/blocks/lwn-recipe-meta/src/edit.js:24
+#: includes/blocks/lwn-recipe-meta/src/save.js:10
+msgid "This block is only available for the recipe post."
+msgstr "هذا المكون متاح فقط لمنشور الوصفات."
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:31
-msgid "Recipe Time"
-msgstr "وقت الوصفة"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:35
-msgid "Preparation Time (Minutes)"
-msgstr "وقت التحضير (بالدقائق)"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:42
-msgid "Cooking Time (Minutes)"
-msgstr "مدة الطهي (بالدقائق)"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:50
-msgid "Other Recipe Meta"
-msgstr "معلومات الوصفة الأخرى"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:54
-msgid "Servings (per person)"
-msgstr "عدد الأشخاص"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:61
-msgid "Is Vegan?"
-msgstr "نباتية؟"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:66
-#: includes/blocks/lwn-recipe-meta/src/edit.js:162
-#: includes/blocks/lwn-recipe-meta/src/save.js:59
-msgid "Meal"
-msgstr "الوجبة"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:71
+#: includes/blocks/lwn-recipe-meta/src/edit.js:75
 msgid "Breakfast"
 msgstr "الفطور"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:73
+#: includes/blocks/lwn-recipe-meta/src/edit.js:77
 msgid "Lunch"
 msgstr "الغذاء"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:74
+#: includes/blocks/lwn-recipe-meta/src/edit.js:78
 msgid "Dinner"
 msgstr "العشاء"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:80
+#: includes/blocks/lwn-recipe-meta/src/edit.js:84
+msgid "Recipe Settings"
+msgstr "إعدادات الوصفة"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:86
+msgid "Recipe Time"
+msgstr "وقت الوصفة"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:90
+msgid "Preparation Time (Minutes)"
+msgstr "وقت التحضير (بالدقائق)"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:99
+msgid "Cooking Time (Minutes)"
+msgstr "مدة الطهي (بالدقائق)"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:109
+msgid "Other Recipe Meta"
+msgstr "معلومات الوصفة الأخرى"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:113
+msgid "Servings (per person)"
+msgstr "عدد الأشخاص"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:122
+msgid "Is Vegan?"
+msgstr "نباتية؟"
+
+#: includes/blocks/lwn-recipe-meta/build/index.js:1
+#: includes/blocks/lwn-recipe-meta/src/edit.js:138
 msgid "Color Settings"
 msgstr "إعدادات اللون"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:84
+#: includes/blocks/lwn-recipe-meta/src/edit.js:142
 msgid "Recipe Meta Box Color"
 msgstr "لون صندوق معلومات الوصفة"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:88
+#: includes/blocks/lwn-recipe-meta/src/edit.js:146
 msgid "Box Background"
 msgstr "لون خلفية الصندوق"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:94
+#: includes/blocks/lwn-recipe-meta/src/edit.js:152
 msgid "Box Title Color"
 msgstr "لون عنوان الصندوق"
 
 #: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:100
+#: includes/blocks/lwn-recipe-meta/src/edit.js:158
 msgid "Box Value Color"
 msgstr "لون قيمة معلومة الوصفة"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:117
-#: includes/blocks/lwn-recipe-meta/src/save.js:14
-msgid "Preparation Time"
-msgstr "مدة التحضير"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:128
-#: includes/blocks/lwn-recipe-meta/src/save.js:25
-msgid "Cooking Time"
-msgstr "مدة الطهي"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:140
-#: includes/blocks/lwn-recipe-meta/src/save.js:37
-msgid "Overall Time"
-msgstr "المدة الكلية"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:151
-#: includes/blocks/lwn-recipe-meta/src/save.js:48
-msgid "Servings"
-msgstr "عدد الأشخاص"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:172
-#: includes/blocks/lwn-recipe-meta/src/save.js:69
-msgid "Vegan?"
-msgstr "نباتية؟"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:176
-#: includes/blocks/lwn-recipe-meta/src/save.js:73
-msgid "Yes"
-msgstr "نعم"
-
-#: includes/blocks/lwn-recipe-meta/build/index.js:1
-#: includes/blocks/lwn-recipe-meta/src/edit.js:177
-#: includes/blocks/lwn-recipe-meta/src/save.js:74
-msgid "No"
-msgstr "لا"
 
 #: includes/blocks/lwn-recipe-notes/build/index.js:1
 #: includes/blocks/lwn-recipe-notes/src/edit.js:15
@@ -459,6 +409,72 @@ msgctxt "block description"
 msgid "Add Note to Recipe Page"
 msgstr "اضافة ملاحظة لصفحة الوصفة"
 
+#~ msgid "Customized Sidebar"
+#~ msgstr "الشريط الجانبي المخصص"
+
+#~ msgid "Customized Widgets"
+#~ msgstr "الودجات المخصصة"
+
+#~ msgid ""
+#~ "There are two recipe widgets; the first is \"Lwn Latest Recipes\", and the "
+#~ "second one is \"LWN Recipe Types\". You can check them in the widgets "
+#~ "section."
+#~ msgstr ""
+#~ "نقدم لك نوعين من الودجات. الأول: أحدث الودجات، والثاني: أنواع الودجات. "
+#~ "يمكنك التحقق منه في قسم الودجات."
+
+#~ msgid "Wordpress Development Learning Path"
+#~ msgstr "مسار تطوير تطوير إضافات ووردبريس"
+
+#~ msgid "What is this plugin?"
+#~ msgstr "ما هذه الإضافة؟"
+
+#~ msgid "What is the purpose?"
+#~ msgstr "ما الهدف من الإضافة؟"
+
+#~ msgid "Documentation"
+#~ msgstr "التوثيق"
+
+#~ msgid "Ask for help at: help@LearnWithNaw.net"
+#~ msgstr "اطلب المساعدة عبر: help@LearnWithNaw.net"
+
+#~ msgid ""
+#~ "LWN Recipes helps users to manage their recipes, and display them in custom "
+#~ "templates."
+#~ msgstr ""
+#~ "تساعد إضافة وصفات LWN المستخدمين على إدارة وصفاتهم وعرضها في قوالب مخصصة."
+
+#~ msgid ""
+#~ "LWN Recipes also allows users to add custom recipes widgets and sidebar to "
+#~ "their website."
+#~ msgstr "تتيح إضافة وصفات LWN عرض ودجات وشريط جانبي مخصص للوصفات."
+
+#~ msgid ""
+#~ "LWN Recipes was created with the intention of teaching developers how to "
+#~ "make a professional, yet simple WordPress plugin."
+#~ msgstr ""
+#~ "تم إنشاء إضافة وصفات LWN بنية مساعدة المطورين على بناء إضافة احترافية "
+#~ "وبسيطة."
+
+#~ msgid "WordPress Development Learning Path"
+#~ msgstr "مسار تطوير تطوير إضافات ووردبريس"
+
+#~ msgid ""
+#~ "Lentil soup is one of the most delicious types of soup, popular in the Arab "
+#~ "world, often consumed in winter for its ability to increase warmth. Lentil "
+#~ "soup is prepared in easy ways. If you are a fan of this soup, we offer you "
+#~ "in today's dish the method and ingredients for preparing it with easy "
+#~ "steps, and you will get delicious and healthy lentil soup."
+#~ msgstr ""
+#~ "شوربة العدس، هي واحدة من ألذ أنواع الشوربة، تحظى بشهرة كبيرة في الوطن "
+#~ "العربي، يُكثر تناولها في فصل الشتاء؛ لقدرتها على زيادة الشعور بالدفء.تُحضّر "
+#~ "شوربة العدس بطرق سهلة، إذا كنتِ من محبي هذه الشوربة نقدّم لك في طبق اليوم "
+#~ "طريقة ومقادير تحضيرها بمكوّنات سهلة خطوة بخطوة وستحصلين على شوربة عدس لذيذة "
+#~ "وصحيّة."
+
+#~ msgid "LWN Recipe Meta Section"
+#~ msgstr "قسم معلومات الوصفة"
+
 #~ msgid "Recipe Info"
 #~ msgstr "معلومات الوصفة"
 
@@ -485,9 +501,6 @@ msgstr "اضافة ملاحظة لصفحة الوصفة"
 
 #~ msgid "Display Latest LWN Recipes"
 #~ msgstr "عرض أحدث وصفات LWN"
-
-#~ msgid "Recipes"
-#~ msgstr "الوصفات"
 
 #~ msgid "Number of recipes"
 #~ msgstr "عدد الوصفات المعروضة"
