@@ -68,6 +68,16 @@ export default function Edit({ attributes, setAttributes, context }) {
 		}
 	}, [meta[metaKeysMap['prep_time']], meta[metaKeysMap['cook_time']]]);
 
+	// Meal Options
+	const mealOptions = [
+		{
+			value: 'breakfast',
+			label: __('Breakfast', 'lwn-recipe'),
+		},
+		{ value: 'lunch', label: __('Lunch', 'lwn-recipe') },
+		{ value: 'dinner', label: __('Dinner', 'lwn-recipe') },
+	];
+
 	return (
 		<>
 			<InspectorControls>
@@ -118,14 +128,7 @@ export default function Edit({ attributes, setAttributes, context }) {
 						<SelectControl
 							label={__('Meal', 'lwn-recipe')}
 							value={meta[metaKeysMap['meal']]}
-							options={[
-								{
-									value: 'breakfast',
-									label: __('Breakfast', 'lwn-recipe'),
-								},
-								{ value: 'lunch', label: __('Lunch', 'lwn-recipe') },
-								{ value: 'dinner', label: __('Dinner', 'lwn-recipe') },
-							]}
+							options={mealOptions}
 							onChange={(value) =>
 								setMeta({ ...meta, [metaKeysMap['meal']]: value })
 							}
@@ -218,7 +221,11 @@ export default function Edit({ attributes, setAttributes, context }) {
 						</p>
 
 						<p style={{ color: attributes.boxValueColor }}>
-							{meta[metaKeysMap['meal']]}
+							{
+								mealOptions.find(
+									(opt) => opt.value === meta[metaKeysMap['meal']]
+								)['label']
+							}
 						</p>
 					</div>
 					<div
