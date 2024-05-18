@@ -19,14 +19,6 @@ register_block_pattern('lwn-recipe-/lwn-recipe-short-description', [
 <!-- /wp:group -->',
 ]);
 
-/* Register Recipe Meta Pattern */
-register_block_pattern('lwn-recipe-/lwn-recipe-meta-section', [
-  'title' => __('LWN Recipe Meta Section', 'lwn-recipe'),
-  'description' => _x('Display LWN Recipe Meta Section Block', 'lwn-recipe'),
-  'content' => '<!-- wp:lwn-recipe/lwn-recipe-meta -->
-<div class="wp-block-lwn-recipe-lwn-recipe-meta"><div class="wp-block-lwn-recipe-lwn-recipe-meta__boxes"><div class="wp-block-lwn-recipe-lwn-recipe-meta__box" style="background:#f4f4f4"><p style="color:#2d2c39">Preparation Time</p><p style="color:#8fb257"></p></div><div class="wp-block-lwn-recipe-lwn-recipe-meta__box" style="background:#f4f4f4"><p style="color:#2d2c39">Cooking Time</p><p style="color:#8fb257"></p></div><div class="wp-block-lwn-recipe-lwn-recipe-meta__box" style="background:#f4f4f4"><p style="color:#2d2c39">Overall Time</p><p style="color:#8fb257"></p></div><div class="wp-block-lwn-recipe-lwn-recipe-meta__box" style="background:#f4f4f4"><p style="color:#2d2c39">Servings</p><p style="color:#8fb257"></p></div><div class="wp-block-lwn-recipe-lwn-recipe-meta__box" style="background:#f4f4f4"><p style="color:#2d2c39">Meal</p><p style="color:#8fb257">breakfast</p></div><div class="wp-block-lwn-recipe-lwn-recipe-meta__box" style="background:#f4f4f4"><p style="color:#2d2c39">Vegan?</p><p style="color:#8fb257">No</p></div></div></div>
-<!-- /wp:lwn-recipe/lwn-recipe-meta -->',
-]);
 
 /* Register Ingredients Pattern */
 register_block_pattern('lwn-recipe-/lwn-recipe-ingredients-section', [

@@ -6,7 +6,7 @@ function lwn_recipe_init()
   /* Recipe Default Template */
   $template_blocks = [
     ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-short-description']],
-    ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-meta-section']],
+    ['lwn-recipe/lwn-recipe-meta', []],
     ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-ingredients-section']],
     ['core/pattern', ['slug' => 'lwn-recipe-/lwn-recipe-steps-section']],
   ];
