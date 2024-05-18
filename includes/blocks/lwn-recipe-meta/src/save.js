@@ -3,6 +3,15 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	const blockProps = useBlockProps.save();
+
+	if (attributes.postType !== 'lwn_recipe') {
+		return (
+			<div style={{ background: 'orange', padding: '10px' }}>
+				{__('This block is only available for the recipe post.', 'lwn-recipe')}
+			</div>
+		);
+	}
+
 	return (
 		<div {...blockProps}>
 			<div className="wp-block-lwn-recipe-lwn-recipe-meta__boxes">

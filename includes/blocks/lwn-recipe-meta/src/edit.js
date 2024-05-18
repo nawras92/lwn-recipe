@@ -7,22 +7,57 @@ import { Panel, PanelBody } from '@wordpress/components';
 import { RangeControl } from '@wordpress/components';
 import { ToggleControl } from '@wordpress/components';
 import { SelectControl } from '@wordpress/components';
+import { useEntityProp } from '@wordpress/core-data';
 
 import './editor.scss';
 
-export default function Edit({ attributes, setAttributes }) {
+export default function Edit({ attributes, setAttributes, context }) {
 	const blockProps = useBlockProps();
 
+	// Get postId & postType from context
+	const { postId } = context;
+	const { postType } = context;
+
+	// Only Display Meta Block On  the Lwn_recipe posts
+	if (postType !== 'lwn_recipe') {
+		return (
+			<div style={{ background: 'orange', padding: '10px' }}>
+				{__('This block is only available for the recipe post.', 'lwn-recipe')}
+			</div>
+		);
+	}
+
+	// Meta Keys
+	const metaKeysMap = {
+		prep_time: '_lwn_recipe_meta_prep_time',
+		cook_time: '_lwn_recipe_meta_cook_time',
+		overall_time: '_lwn_recipe_meta_overall_time',
+		servings: '_lwn_recipe_meta_servings',
+		is_vegan: '_lwn_recipe_meta_is_vegan',
+		meal: '_lwn_recipe_meta_meal',
+	};
+
+	// Get meta value from database
+	const [meta, setMeta] = useEntityProp('postType', postType, 'meta', postId);
+
 	useEffect(() => {
-		if (attributes.preparation_time && attributes.cooking_time) {
-			setAttributes({
-				...attributes,
-				overall_time:
-					parseInt(attributes.preparation_time) +
-					parseInt(attributes.cooking_time),
+		// Save/set the postType Attribute
+		if (postType) {
+			setAttributes({ postType });
+		}
+	}, [postType]);
+
+	// Set the overall time meta
+	useEffect(() => {
+		if (meta[metaKeysMap['prep_time']] && meta[metaKeysMap['cook_time']]) {
+			setMeta({
+				...meta,
+				[metaKeysMap['overall_time']]:
+					meta[metaKeysMap['prep_time']] + meta[metaKeysMap['cook_time']],
 			});
 		}
-	}, [attributes.preparation_time, attributes.cooking_time]);
+	}, [meta[metaKeysMap['prep_time']], meta[metaKeysMap['cook_time']]]);
+
 	return (
 		<>
 			<InspectorControls>
@@ -33,15 +68,19 @@ export default function Edit({ attributes, setAttributes }) {
 					>
 						<RangeControl
 							label={__('Preparation Time (Minutes)', 'lwn-recipe')}
-							value={attributes.preparation_time}
-							onChange={(value) => setAttributes({ preparation_time: value })}
+							value={meta[metaKeysMap['prep_time']]}
+							onChange={(value) =>
+								setMeta({ ...meta, [metaKeysMap['prep_time']]: value })
+							}
 							min={1}
 							max={60 * 24}
 						/>
 						<RangeControl
 							label={__('Cooking Time (Minutes)', 'lwn-recipe')}
-							value={attributes.cooking_time}
-							onChange={(value) => setAttributes({ cooking_time: value })}
+							value={meta[metaKeysMap['cook_time']]}
+							onChange={(value) =>
+								setMeta({ ...meta, [metaKeysMap['cook_time']]: value })
+							}
 							min={1}
 							max={60 * 24}
 						/>
@@ -52,19 +91,23 @@ export default function Edit({ attributes, setAttributes }) {
 					>
 						<RangeControl
 							label={__('Servings (per person)', 'lwn-recipe')}
-							value={attributes.servings}
-							onChange={(value) => setAttributes({ servings: value })}
+							value={meta[metaKeysMap['servings']]}
+							onChange={(value) =>
+								setMeta({ ...meta, [metaKeysMap['servings']]: value })
+							}
 							min={1}
 							max={100}
 						/>
 						<ToggleControl
 							label={__('Is Vegan?', 'lwn-recipe')}
-							checked={attributes.isVegan}
-							onChange={(value) => setAttributes({ isVegan: value })}
+							checked={meta[metaKeysMap['is_vegan']]}
+							onChange={(value) =>
+								setMeta({ ...meta, [metaKeysMap['is_vegan']]: value })
+							}
 						/>
 						<SelectControl
 							label={__('Meal', 'lwn-recipe')}
-							value={attributes.meal}
+							value={meta[metaKeysMap['meal']]}
 							options={[
 								{
 									value: 'breakfast',
@@ -73,7 +116,9 @@ export default function Edit({ attributes, setAttributes }) {
 								{ value: 'lunch', label: __('Lunch', 'lwn-recipe') },
 								{ value: 'dinner', label: __('Dinner', 'lwn-recipe') },
 							]}
-							onChange={(value) => setAttributes({ meal: value })}
+							onChange={(value) =>
+								setMeta({ ...meta, [metaKeysMap['meal']]: value })
+							}
 						/>
 					</PanelBody>
 					<PanelBody
@@ -117,7 +162,7 @@ export default function Edit({ attributes, setAttributes }) {
 							{__('Preparation Time', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
-							{attributes.preparation_time}
+							{meta[metaKeysMap['prep_time']]}
 						</p>
 					</div>
 					<div
@@ -129,7 +174,7 @@ export default function Edit({ attributes, setAttributes }) {
 						</p>
 
 						<p style={{ color: attributes.boxValueColor }}>
-							{attributes.cooking_time}
+							{meta[metaKeysMap['cook_time']]}
 						</p>
 					</div>
 					<div
@@ -140,7 +185,7 @@ export default function Edit({ attributes, setAttributes }) {
 							{__('Overall Time', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
-							{attributes.overall_time}
+							{meta[metaKeysMap['overall_time']]}
 						</p>
 					</div>
 					<div
@@ -151,7 +196,7 @@ export default function Edit({ attributes, setAttributes }) {
 							{__('Servings', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
-							{attributes.servings}
+							{meta[metaKeysMap['servings']]}
 						</p>
 					</div>
 					<div
@@ -162,7 +207,9 @@ export default function Edit({ attributes, setAttributes }) {
 							{__('Meal', 'lwn-recipe')}
 						</p>
 
-						<p style={{ color: attributes.boxValueColor }}>{attributes.meal}</p>
+						<p style={{ color: attributes.boxValueColor }}>
+							{meta[metaKeysMap['meal']]}
+						</p>
 					</div>
 					<div
 						className="wp-block-lwn-recipe-lwn-recipe-meta__box"
@@ -172,7 +219,7 @@ export default function Edit({ attributes, setAttributes }) {
 							{__('Vegan?', 'lwn-recipe')}
 						</p>
 						<p style={{ color: attributes.boxValueColor }}>
-							{attributes.isVegan
+							{meta[metaKeysMap['is_vegan']]
 								? __('Yes', 'lwn-recipe')
 								: __('No', 'lwn-recipe')}
 						</p>

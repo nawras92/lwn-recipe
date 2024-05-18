@@ -8,29 +8,8 @@
   "icon": "list-view",
   "description": "Controls the recipe meta including the preparation time, cook time, overal time, and other",
   "attributes": {
-    "preparation_time": {
-      "type": "number"
-    },
-    "cooking_time": {
-      "type": "number"
-    },
-    "overall_time": {
-      "type": "number"
-    },
-    "servings": {
-      "type": "number"
-    },
-    "isVegan": {
-      "type": "boolean",
-      "default": false
-    },
-    "meal": {
-      "enum": [
-        "breakfast",
-        "lunch",
-        "dinner"
-      ],
-      "default": "breakfast"
+    "postType": {
+      "type": "string"
     },
     "boxBackground": {
       "type": "string",
@@ -47,6 +26,7 @@
   },
   "example": {},
   "supports": {
+    "multiple": false,
     "html": false,
     "align": true,
     "color": true,
@@ -56,6 +36,10 @@
       "blockGap": true
     }
   },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
   "textdomain": "lwn-recipe",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
