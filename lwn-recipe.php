@@ -48,6 +48,7 @@ require_once LWN_RECIPE_PLUGIN_PATH . 'admin/admin-ui.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-styles.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-recipe-type.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-recipe-taxonomy.php';
+require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-meta.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/blocks.php';
 require_once LWN_RECIPE_PLUGIN_PATH . 'includes/register-lwn-patterns.php';
 
