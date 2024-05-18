@@ -224,7 +224,7 @@ export default function Edit({ attributes, setAttributes, context }) {
 							{
 								mealOptions.find(
 									(opt) => opt.value === meta[metaKeysMap['meal']]
-								)['label']
+								)?.label
 							}
 						</p>
 					</div>
