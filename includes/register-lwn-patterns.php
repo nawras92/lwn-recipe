@@ -10,15 +10,11 @@ register_block_pattern('lwn-recipe-/lwn-recipe-short-description', [
     '"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"8px"}},"backgroundColor":"accent-4","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-accent-4-background-color has-background" style="border-radius:8px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"color":{"text":"#22261ec7"},"elements":{"link":{"color":{"text":"#22261ec7"}}}}} -->
 <p class="has-text-color has-link-color" style="color:#22261ec7">' .
-    __(
-      'Lentil soup is one of the most delicious types of soup, popular in the Arab world, often consumed in winter for its ability to increase warmth. Lentil soup is prepared in easy ways. If you are a fan of this soup, we offer you in today\'s dish the method and ingredients for preparing it with easy steps, and you will get delicious and healthy lentil soup.',
-      'lwn-recipe'
-    ) .
+    __('Short Recipe Description....', 'lwn-recipe') .
     '</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->',
 ]);
-
 
 /* Register Ingredients Pattern */
 register_block_pattern('lwn-recipe-/lwn-recipe-ingredients-section', [
