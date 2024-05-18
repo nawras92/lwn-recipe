@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       LWN Recipe
- * Plugin URI:        https://learnwithnaw.com/learning-path/3
+ * Plugin URI:        https://learnwithnaw.com
  * Description:       Manage your recipes easily
- * Version:           1.0.0
- * Requires at least: 5.2
- * Requires PHP:      7.2
+ * Version:           2.0.0
+ * Requires at least: 6.0
+ * Requires PHP:      7.4
  * Author:            Nawras Ali
  * Author URI:        https://learnwithnaw.com
  * Text Domain:       lwn-recipe

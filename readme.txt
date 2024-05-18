@@ -2,10 +2,10 @@
 
 Contributors: Nawras92
 Tags: recipes, restaurants, cook, kitchens, food
-Requires at least: 5.0
-Tested up to: 6.1
-Requires PHP: 5.3
-Stable tag: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+Stable tag: 2.0.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -19,9 +19,9 @@ LWN Recipes helps users to manage their recipes, and display them in custom temp
  
 1. Recipe Custom type with title, steps, ingredients, preparation time, and many more fields.
 2. Recipe Custom Type.
-3. Recipe Custom Sidebar.
-4. Recipe Custom Widgets.
-5. Customized recipes and single recipe templates.
+3. Recipe Custom blocks.
+4. Recipe Custom patterns.
+5. It supports block themes
  
 == Installation ==
 
@@ -38,20 +38,24 @@ Go to the bottom of admin sidebar, choose "Lwn Recipe", and enjoy adding your re
 = How to check all recipes in the frontend? = 
 Go to: your-domain.com/recipe
 
-= How to add the customized sidebar? = 
-You can add your customized Sidebar to Recipe pages. Check it in the widgets section! 
+= How to add recipe blocks? = 
+You can add recipe blocks from the Gutenberg editor in the block section. There are two recipe blocks available; the first is the recipe meta, and the second; is the recipe note. 
 
-= What are the available widgets? = 
-There are two recipe widgets; the first is "Lwn Latest Recipes", and the second one is "LWN Recipe Types". You can check them in the widgets section. 
+= How to add recipe patterns? = 
+You can add recipe patterns from the Gutenberg editor in the pattern section. There are three recipe patterns available; the first is the recipe short description, the second; is the recipe ingredients, and the the third; is the recipe steps. 
 
 == Useful Links ==
 
-- [Plugin Code](https://github.com/nawras92/wordpress-plugin-development)
-- [Learn WordPress Plugin Development On YouTube](https://www.youtube.com/playlist?list=PLt0HRIA9i35sTfR5hwaHkHdnAtK441aU2)
-- [WordPress Plugin Development Learning Path](https://learnwithnaw.com/learning-path/3)
+- [Plugin Code](https://github.com/nawras92/lwn-recipe)
+- [YouTube](https://www.youtube.com/@learnwithnaw)
+- [Our Website](https://learnwithnaw.com)
 
 == Changelog ==
-= 1.0 = 
+
+= 2.0.0 = 
+* Add Block Theme Support. 
+
+= 1.0.0 = 
 * First version of the plugin. 
 
 == Screenshots ==
