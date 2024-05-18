@@ -59,12 +59,32 @@ You can add recipe patterns from the Gutenberg editor in the pattern section. Th
 * First version of the plugin. 
 
 == Screenshots ==
- 
-1. The Plugin Settings Page
-2. Manage all recipes
-3. Manage all Recipe types
-4. Add new recipe and all recipe fields.
-5. Recipe Sidebar & Widgets
-6. All Recipes Archive Template
-7. The Recipe Taxonomy Template
-8. The Single Recipe Template
+
+## 1. Recipe Menu
+![Recipe Menu](Lwn-recipe-menu.png)
+*This screenshot shows the main menu of the recipe plugin where you can manage and organize your recipes.*
+
+## 2. Add New Recipe
+![Add New Recipe](2-add-new-recipe.png)
+*In this screenshot, you can see the interface for adding a new recipe, including fields for the recipe title, ingredients, and instructions.*
+
+## 3. Recipe Meta Block
+![Recipe Meta Block](3-recipe-meta-block.png)
+*This screenshot displays the recipe meta block, where additional information about the recipe such as preparation time, cooking time, and servings can be entered.*
+
+## 4. Control Recipe Meta Color
+![Control Recipe Meta Color](4-control-recipe-meta-color.png)
+*This screenshot shows the settings for customizing the color scheme of the recipe meta information to match your website's theme.*
+
+## 5. Recipe Ingredients and Steps Patterns
+![Recipe Ingredients and Steps Patterns](5-recipe-ingredients-and-steps-patterns.png)
+*Here, you can see predefined patterns for adding ingredients and steps, making it easier to structure the recipe content.*
+
+## 6. Recipe Short Description Pattern
+![Recipe Short Description Pattern](6-recipe-short-description-pattern.png)
+*This screenshot highlights the pattern used for adding a short description of the recipe, which appears at the beginning of the recipe post.*
+
+## 7. Recipe Custom Category
+![Recipe Custom Category](7-recipe-custom-category.png)
+*In this screenshot, the feature for creating and managing custom categories for recipes is displayed, allowing for better organization and navigation.*
+
