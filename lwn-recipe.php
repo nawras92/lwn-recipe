@@ -20,15 +20,8 @@ define('LWN_RECIPE_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('LWN_RECIPE_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 // Help Tabs Constants
-define(
-  'LWN_RECIPE_YOUTUBE_LINK',
-  'https://www.youtube.com/playlist?list=PLt0HRIA9i35sTfR5hwaHkHdnAtK441aU2'
-);
-define(
-  'LWN_RECIPE_GIT_CODE',
-  'https://github.com/nawras92/wordpress-plugin-development'
-);
-define('LWN_RECIPE_WORDPRESS_LP', 'https://learnwithnaw.com/learning-path/3');
+define('LWN_RECIPE_YOUTUBE_LINK', 'https://www.youtube.com/@learnwithnaw');
+define('LWN_RECIPE_GIT_CODE', 'https://github.com/nawras92/lwn-recipe');
 define('LWN_RECIPE_HELP_EMAIL', 'help@learnwithnaw.net');
 
 // Load translations
