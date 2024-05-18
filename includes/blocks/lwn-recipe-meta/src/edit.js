@@ -7,13 +7,12 @@ import { Panel, PanelBody } from '@wordpress/components';
 import { RangeControl } from '@wordpress/components';
 import { ToggleControl } from '@wordpress/components';
 import { SelectControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
 import { useEntityProp } from '@wordpress/core-data';
 
 import './editor.scss';
 
 export default function Edit({ attributes, setAttributes, context }) {
-	const blockProps = useBlockProps();
-
 	// Get postId & postType from context
 	const { postId } = context;
 	const { postType } = context;
@@ -26,6 +25,17 @@ export default function Edit({ attributes, setAttributes, context }) {
 			</div>
 		);
 	}
+
+	// Check if this is the archive page
+	const isArchive = useSelect((select) => {
+		const store = select('core/edit-site');
+		const postId = store?.getEditedPostId();
+		return Boolean(postId && postId.includes('//archive'));
+	});
+
+	const blockProps = useBlockProps({
+		className: isArchive ? 'archive-page' : '',
+	});
 
 	// Meta Keys
 	const metaKeysMap = {

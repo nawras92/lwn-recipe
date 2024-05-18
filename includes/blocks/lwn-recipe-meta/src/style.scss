@@ -20,3 +20,29 @@
 	padding: 20px 30px;
 	border-radius: 8px;
 }
+
+// for archive page
+.wp-block-lwn-recipe-lwn-recipe-meta.archive-page
+	.wp-block-lwn-recipe-lwn-recipe-meta__boxes {
+	gap: 4px;
+
+	@media screen and (max-width: 786px) {
+		gap: 4px;
+	}
+}
+.wp-block-lwn-recipe-lwn-recipe-meta.archive-page
+	.wp-block-lwn-recipe-lwn-recipe-meta__box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	padding: 4px;
+	border-radius: 8px;
+}
+.wp-block-lwn-recipe-lwn-recipe-meta.archive-page
+	.wp-block-lwn-recipe-lwn-recipe-meta__box
+	p {
+	padding: 0;
+	margin: 0;
+}
